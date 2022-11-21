@@ -32,3 +32,12 @@ lein repl
 (require '<project_name>.core :reload)
 (-main)
 ```
+
+- exit the repl
+```sh
+exit
+#or
+quit
+# 
+<ctrl>+ d
+```
