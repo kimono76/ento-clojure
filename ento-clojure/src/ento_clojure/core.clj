@@ -4,4 +4,4 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (println "Ento API for math and statistics writen in clojure"))

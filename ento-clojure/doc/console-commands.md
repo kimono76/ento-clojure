@@ -20,3 +20,15 @@ lein new app <app_name>
 
 ```
 
+# REPL
+(read eval print loop)
+
+```sh
+lein repl
+```
+
+- reload the repl after changes in the project 
+```sh
+(require '<project_name>.core :reload)
+(-main)
+```
