@@ -92,7 +92,7 @@
    :headers {"Content-Type" "text/html"}
    :body    (->
              (pp/pprint req)
-             (str "Given this circle with radius "  (area (:radius (:params req))))
+             (str "The area of this circle is "  (area (:radius (:params req))))
             ;;  (str "Given this circle with radius " (:radius (:params req)))
              )})
 
