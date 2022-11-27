@@ -29,12 +29,13 @@
              (str "Request Object: " req))})
 
 ; Hello-name handler
+; http://localhost:3000/hello?name=John%20Doe
 (defn hello-name [req]
   {:status  200
    :headers {"Content-Type" "text/html"}
    :body    (->
              (pp/pprint req)
-             (str "Hello " (:name (:params req))))})
+             (str "Welcome " (:name (:params req))))})
 
 ; my people-collection mutable collection vector
 (def people-collection (atom []))
