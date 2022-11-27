@@ -53,7 +53,7 @@
                                :pi (str pi)}))
 
 (defn area [radius]
-  (str " area " (* 3.14 (Integer/parseInt radius))))
+  (str " area " (* 3.14 (Integer/parseInt radius) (Integer/parseInt radius))))
 
 (area "2")
 

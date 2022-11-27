@@ -76,3 +76,15 @@ clj꞉ento-clojure.core꞉> 
 clj꞉ento-clojure.core꞉> 
 " area 6.28"
 clj꞉ento-clojure.core꞉> 
+#'ento-clojure.core/area
+clj꞉ento-clojure.core꞉> 
+" area 12.56"
+clj꞉ento-clojure.core꞉> 
+" area 3.14"
+clj꞉ento-clojure.core꞉> 
+" area 314.0"
+clj꞉ento-clojure.core꞉> 
+2
+clj꞉ento-clojure.core꞉> 
+" area 12.56"
+clj꞉ento-clojure.core꞉> 
