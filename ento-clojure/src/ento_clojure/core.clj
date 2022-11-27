@@ -52,7 +52,18 @@
   (swap! area-collection conj {:radius (str radius)
                                :pi (str pi)}))
 
+(defn area [radius]
+  (str " area " (* 3.14 (Integer/parseInt radius))))
+
+(area "2")
+
+
+
+;;  (* 3.14 2)
+
 ; Example JSON objects
+
+
 (addperson "Functional" "Human")
 (addperson "Micky" "Mouse")
 
@@ -72,14 +83,18 @@
    :body    (-> (let [p (partial getparameter req)]
                   (str (json/write-str (addperson (p :firstname) (p :surname))))))})
 
-; Hello-name handler
-; http://localhost:3000/hello?name=John%20Doe
+
+; http://localhost:3000/circle?radius=2
+
+
 (defn circle-handler [req]
   {:status  200
    :headers {"Content-Type" "text/html"}
    :body    (->
              (pp/pprint req)
-             (str "Given this circle with radius " (:radius (:params req))))})
+             (str "Given this circle with radius "  (area (:radius (:params req))))
+            ;;  (str "Given this circle with radius " (:radius (:params req)))
+             )})
 
 ; Our main routes
 (defroutes app-routes
