@@ -18,7 +18,7 @@
 (defn simple-body-page [req] ;(3)
   {:status  200
    :headers {"Content-Type" "text/html"}
-   :body    "Hello World"})
+   :body    "Ento API for Math,Statistics, and ML, powered by Clojure"})
 ;
 ; request-example
 (defn request-example [req]
