@@ -39,11 +39,18 @@
 
 ; my people-collection mutable collection vector
 (def people-collection (atom []))
+(def area-collection (atom []))
+
 
 ;Collection Helper functions to add a new person
+
+
 (defn addperson [firstname surname]
   (swap! people-collection conj {:firstname (str/capitalize firstname)
                                  :surname (str/capitalize surname)}))
+(defn circle-area [pi radius]
+  (swap! area-collection conj {:radius (str radius)
+                               :pi (str pi)}))
 
 ; Example JSON objects
 (addperson "Functional" "Human")
@@ -65,6 +72,15 @@
    :body    (-> (let [p (partial getparameter req)]
                   (str (json/write-str (addperson (p :firstname) (p :surname))))))})
 
+; Hello-name handler
+; http://localhost:3000/hello?name=John%20Doe
+(defn circle-handler [req]
+  {:status  200
+   :headers {"Content-Type" "text/html"}
+   :body    (->
+             (pp/pprint req)
+             (str "Given this circle with radius " (:radius (:params req))))})
+
 ; Our main routes
 (defroutes app-routes
   (GET "/" [] simple-body-page)
@@ -72,6 +88,7 @@
   (GET "/hello" [] hello-name)
   (GET "/people" [] people-handler)
   (GET "/people/add" [] addperson-handler)
+  (GET "/circle" [] circle-handler)
   (route/not-found "Error, page not found!"))
 
 ; Our main entry function
