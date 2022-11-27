@@ -13,5 +13,6 @@
 
 [github example  API repository](https://github.com/chris-emerson/rest_demo)
 
+[API example with swagger](https://www.youtube.com/watch?v=f2hNQdS2VxQ&list=PLb5SjnGEsSJdJnbjxVWci1P7mKY-K1ExD)
 
 
