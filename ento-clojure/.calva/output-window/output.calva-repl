@@ -18,3 +18,8 @@
 clj꞉ento-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉ento-clojure.core꞉> 
+#'ento-clojure.core/-main
+clj꞉ento-clojure.core꞉> 
+; Syntax error compiling at (src/ento_clojure/core.clj:11:1).
+; Unable to resolve symbol: defroutes in this context
+clj꞉ento-clojure.core꞉> 
