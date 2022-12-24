@@ -18,73 +18,7 @@
 clj꞉ento-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉ento-clojure.core꞉> 
-#'ento-clojure.core/-main
-clj꞉ento-clojure.core꞉> 
-; Syntax error compiling at (src/ento_clojure/core.clj:11:1).
-; Unable to resolve symbol: defroutes in this context
-clj꞉ento-clojure.core꞉> 
-; Syntax error compiling at (src/ento_clojure/core.clj:82:5).
-; No such namespace: server
-clj꞉ento-clojure.core꞉> 
-; Syntax error macroexpanding clojure.core/defn at (src/ento_clojure/core.clj:77:1).
-; () - failed: Insufficient input at: [:fn-name] spec: :clojure.core.specs.alpha/defn-args
-clj꞉ento-clojure.core꞉> 
-; Syntax error compiling at (src/ento_clojure/core.clj:68:1).
-; Unable to resolve symbol: defroutes in this context
-clj꞉ento-clojure.core꞉> 
-; Syntax error macroexpanding clojure.core/ns at (src/ento_clojure/core.clj:1:1).
-; () - failed: Insufficient input at: [:ns-name] spec: :clojure.core.specs.alpha/ns-form
-clj꞉ento-clojure.core꞉> 
-; Syntax error (ClassNotFoundException) compiling at (src/ento_clojure/core.clj:1:7941).
-; ento-clojure.core
-clj꞉ento-clojure.core꞉> 
-; Syntax error macroexpanding clojure.core/ns at (src/ento_clojure/core.clj:1:1).
-; () - failed: Insufficient input at: [:ns-name] spec: :clojure.core.specs.alpha/ns-form
-clj꞉ento-clojure.core꞉> 
-; Execution error (FileNotFoundException) at ento-clojure.core/eval7857$loading (form-init15736741107029924369.clj:1).
-; Could not locate org/httpkit/server__init.class, org/httpkit/server.clj or org/httpkit/server.cljc on classpath.
-clj꞉ento-clojure.core꞉> 
-; Syntax error compiling at (src/ento_clojure/core.clj:1:7941).
-; Unable to resolve symbol: simple-body-page in this context
-clj꞉ento-clojure.core꞉> 
-; Syntax error macroexpanding clojure.core/defn at (src/ento_clojure/core.clj:18:1).
-; () - failed: Insufficient input at: [:fn-name] spec: :clojure.core.specs.alpha/defn-args
-clj꞉ento-clojure.core꞉> 
-6.28
-clj꞉ento-clojure.core꞉> 
 #'ento-clojure.core/area
-clj꞉ento-clojure.core꞉> 
-2
-clj꞉ento-clojure.core꞉> 
-; Syntax error compiling at (src/ento_clojure/core.clj:56:17).
-; Unable to resolve symbol: radius in this context
-clj꞉ento-clojure.core꞉> 
-#'ento-clojure.core/area
-clj꞉ento-clojure.core꞉> 
-" area 6.28"
-clj꞉ento-clojure.core꞉> 
-" area 6.28"
-clj꞉ento-clojure.core꞉> 
-" area 6.28"
-clj꞉ento-clojure.core꞉> 
-; Execution error (ClassCastException) at ento-clojure.core/area (form-init15736741107029924369.clj:56).
-; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
-clj꞉ento-clojure.core꞉> 
-2
-clj꞉ento-clojure.core꞉> 
-#'ento-clojure.core/area
-clj꞉ento-clojure.core꞉> 
-" area 6.28"
-clj꞉ento-clojure.core꞉> 
-#'ento-clojure.core/area
-clj꞉ento-clojure.core꞉> 
-" area 12.56"
-clj꞉ento-clojure.core꞉> 
-" area 3.14"
-clj꞉ento-clojure.core꞉> 
-" area 314.0"
-clj꞉ento-clojure.core꞉> 
-2
 clj꞉ento-clojure.core꞉> 
 " area 12.56"
 clj꞉ento-clojure.core꞉> 
